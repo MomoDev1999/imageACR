@@ -12,7 +12,7 @@ variables:
 jobs:
   - job: BuildAndPush
     pool:
-      name: 'default'  # Usa el agente autohospedado
+      name: 'Default'  # Usa el agente autohospedado
     steps:
       - task: Docker@2
         inputs:
