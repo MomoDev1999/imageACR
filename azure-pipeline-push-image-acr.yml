@@ -12,7 +12,7 @@ variables:
 jobs:
   - job: BuildAndPush
     pool:
-      vmImage: "ubuntu-latest"
+      name: 'default'  # Usa el agente autohospedado
     steps:
       - task: Docker@2
         inputs:
